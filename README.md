@@ -17,13 +17,13 @@ PM2.5 Emissions Data (``𝚜𝚞𝚖𝚖𝚊𝚛𝚢𝚂𝙲𝙲_𝙿𝙼𝟸�
 
 ``𝚏𝚒𝚙𝚜``: A five-digit number (represented as a string) indicating the U.S. county . 
 ``𝚂𝙲𝙲``: The name of the source as indicated by a digit string (see source code classification table) . 
-``𝙿𝚘𝚕𝚕𝚞𝚝𝚊𝚗𝚝``: A string indicating the pollutant  
-``𝙴𝚖𝚒𝚜𝚜𝚒𝚘𝚗𝚜``: Amount of PM2.5 emitted, in tons  
-``𝚝𝚢𝚙𝚎``: The type of source (point, non-point, on-road, or non-road) 
-``𝚢𝚎𝚊𝚛``: The year of emissions recorded 
+``𝙿𝚘𝚕𝚕𝚞𝚝𝚊𝚗𝚝``: A string indicating the pollutant . 
+``𝙴𝚖𝚒𝚜𝚜𝚒𝚘𝚗𝚜``: Amount of PM2.5 emitted, in tons . 
+``𝚝𝚢𝚙𝚎``: The type of source (point, non-point, on-road, or non-road) . 
+``𝚢𝚎𝚊𝚛``: The year of emissions recorded . 
 Source Classification Code Table (``𝚂𝚘𝚞𝚛𝚌𝚎_𝙲𝚕𝚊𝚜𝚜𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗_𝙲𝚘𝚍𝚎.𝚛𝚍𝚜``): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
 
 You can read each of the two files using the ``𝚛𝚎𝚊𝚍𝚁𝙳𝚂()`` function in R. For example, reading in each file can be done with the following code: 
 
-``NEI <- readRDS("summarySCC_PM25.rds")`` 
+``NEI <- readRDS("summarySCC_PM25.rds")`` . 
 ``SCC <- readRDS("Source_Classification_Code.rds")``
